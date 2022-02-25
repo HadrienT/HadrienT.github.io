@@ -40,12 +40,12 @@ function createWorker() {
         myWorker.onmessage = function (e) {
             x = e.data[0];
             y = e.data[1];
-            point=new Point(x,y,aCanvas);
+            let point=new Point(x,y,aCanvas);
             point.ache();
         }
     } else {
         console.log('Your browser doesn\'t support web workers.')
     }
-    
+
 init();
 }
