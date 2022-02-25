@@ -46,4 +46,6 @@ function createWorker() {
     } else {
         console.log('Your browser doesn\'t support web workers.')
     }
+    
+init();
 }
