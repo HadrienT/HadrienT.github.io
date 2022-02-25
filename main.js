@@ -32,8 +32,8 @@ function auto() {
 }
 
 function createWorker() {
-    const x;
-    const y;
+    let x;
+    let y;
     if (window.Worker) {
         const myWorker = new Worker("worker.js");
         
